@@ -390,6 +390,10 @@ footer .copyright {
     margin: 10px 10px;
     font-size: 13px;
   }
+    header .contenedor .textos {
+    position: relative;
+     top:20%
+  }
 
   .main .acerca-de article h3 {
     font-size: 14px;
