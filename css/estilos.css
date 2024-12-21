@@ -1,54 +1,3 @@
-/* Color Theme Swatches in Hex */
-.colorCafeto1-1-hex {
-  color: #bf1120;
-}
-.colorCafeto1-2-hex {
-  color: #abbf60;
-}
-.colorCafeto1-3-hex {
-  color: #4f5902;
-}
-.colorCafeto1-4-hex {
-  color: #400101;
-}
-.colorCafeto1-5-hex {
-  color: #f2f2f2;
-}
-
-/* Color Theme Swatches in RGBA */
-.colorCafeto1-1-rgba {
-  color: rgba(191, 17, 32, 1);
-}
-.colorCafeto1-2-rgba {
-  color: rgba(171, 191, 96, 1);
-}
-.colorCafeto1-3-rgba {
-  color: rgba(79, 89, 2, 1);
-}
-.colorCafeto1-4-rgba {
-  color: rgba(64, 1, 1, 1);
-}
-.colorCafeto1-5-rgba {
-  color: rgba(242, 242, 242, 1);
-}
-
-/* Color Theme Swatches in HSLA */
-.colorCafeto1-1-hsla {
-  color: hsla(354, 83, 40, 1);
-}
-.colorCafeto1-2-hsla {
-  color: hsla(72, 42, 56, 1);
-}
-.colorCafeto1-3-hsla {
-  color: hsla(66, 95, 17, 1);
-}
-.colorCafeto1-4-hsla {
-  color: hsla(0, 96, 12, 1);
-}
-.colorCafeto1-5-hsla {
-  color: hsla(0, 0, 94, 1);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +9,12 @@
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  background-color: rgba(242, 237, 237, 1);
+  /* Color más claro de fondo */
+  color: rgba(51, 51, 51, 1);
+  /* Color de texto principal */
 }
+
 .contenedor {
   width: 90%;
   max-width: 1000px;
@@ -70,7 +24,8 @@ body {
 
 header {
   width: 100%;
-  background: url("../img/portada.jpg") #4f5902;
+  background: url("../img/portada.jpg") rgba(76, 83, 98, 1);
+  /* Nuevo color de fondo */
   background-size: cover;
   background-attachment: fixed;
   background-position: center 0;
@@ -87,13 +42,20 @@ header .menu {
 }
 
 header .menu a {
-  color: #fff;
+  color: rgba(242, 237, 237, 1);
+  /* Nuevo color para enlaces */
   font-size: 20px;
   font-weight: 400;
   display: inline-block;
   margin: 40px 20px;
   text-decoration: none;
   position: relative;
+}
+
+header .menu a:hover {
+  color: rgba(199, 198, 198, 1);
+  /* Color hover para enlaces */
+  transition: 0.3s ease;
 }
 
 header .menu a:hover {
@@ -108,10 +70,12 @@ header .contenedor .textos {
   top: 200px;
   margin: top -52px;
 }
+
 header .textos .nombre {
   font-size: 50px;
   font-weight: 800;
 }
+
 header .textos .nombre span {
   font-weight: 400;
   color: #abbf60;
@@ -144,10 +108,12 @@ header .textos h3 {
   z-index: 0;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
 }
+
 .main .acerca-de .contenedor .foto img {
   vertical-align: top;
   width: 100%;
 }
+
 .main .acerca-de article {
   background: #abbf60;
   padding: 40px;
@@ -174,6 +140,7 @@ header .textos h3 {
   padding-top: 600px;
   margin-bottom: 50px;
 }
+
 .main .menu .titulo {
   font-size: 40px;
   font-weight: 400;
@@ -183,7 +150,8 @@ header .textos h3 {
 
 .main .menu .contenedor-menu,
 .main .menu .contenedor-menu2 {
-  border: 1px solid #400101;
+  border: 1px solid rgba(76, 83, 98, 1);
+  /* Nuevo color de borde */
   background: transparent;
   padding: 10px;
   overflow: hidden;
@@ -205,7 +173,8 @@ header .textos h3 {
 .main .menu .producto {
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 4px dotted #400101;
+  border-bottom: 4px dotted rgba(76, 83, 98, 1);
+  /* Nuevo color de borde */
   overflow: hidden;
 }
 
@@ -215,6 +184,7 @@ header .textos h3 {
   margin-bottom: 15px;
   float: left;
 }
+
 .main .menu .precio {
   width: 20%;
   font-size: 20px;
@@ -224,8 +194,8 @@ header .textos h3 {
 
 .main .menu .descripcion {
   font-size: 16px;
-  color: #4f5902;
-  clear: both;
+  color: rgba(88, 88, 90, 1);
+  /* Nuevo color de texto */
 }
 
 .main .galeria {
@@ -242,6 +212,7 @@ header .textos h3 {
   vertical-align: top;
   opacity: 0.7;
 }
+
 .main .galeria .foto img:hover {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
@@ -257,6 +228,7 @@ header .textos h3 {
   background-repeat: repeat;
   padding: 60px 0;
 }
+
 .main .ubicacion .titulo {
   text-align: center;
   font-size: 40px;
@@ -271,14 +243,17 @@ header .textos h3 {
   width: 50%;
   text-align: left;
 }
+
 .main .ubicacion .horarios {
   float: right;
   width: 50%;
   text-align: right;
 }
+
 .main .ubicacion .direccion .calle {
   margin-bottom: 15px;
 }
+
 .main .ubicacion .horarios h4 {
   text-align: center;
   margin-bottom: 20px;
@@ -304,6 +279,7 @@ header .textos h3 {
 footer {
   background: #400101;
 }
+
 footer .copyright {
   text-align: center;
   padding: 15px 0;
@@ -345,6 +321,7 @@ footer .copyright {
     left: 0;
     top: 0px;
   }
+
   .main .acerca-de .foto {
     width: 100%;
     position: relative;
@@ -379,6 +356,7 @@ footer .copyright {
     width: 80%;
     margin: auto;
   }
+
   footer .copyright {
     font-size: 14px;
     padding: 12px 0;
@@ -390,9 +368,10 @@ footer .copyright {
     margin: 10px 10px;
     font-size: 13px;
   }
-    header .contenedor .textos {
+
+  header .contenedor .textos {
     position: relative;
-     top:80px
+    top: 80px
   }
 
   .main .acerca-de article h3 {
@@ -405,6 +384,7 @@ footer .copyright {
     font-size: 16px;
     line-height: 16px;
   }
+
   .main .menu article .descripcion {
     font-size: 12px;
     line-height: 12px;
